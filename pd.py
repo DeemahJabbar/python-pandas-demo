@@ -3,11 +3,11 @@ import pandas as pd
 # Load the data
 df = pd.read_csv('dummy_user_data.csv')
 
-# Convert 'Date' column to datetime
 df['Date'] = pd.to_datetime(df['Date'])
 
 # Basic insights
-print("Basic Statistical Summary:\n", df.describe())
+print("Basic Statistical Summary:")
+print(df.describe())
 
 # Average login duration
 average_duration = df['Login_Duration'].mean()
